@@ -15,6 +15,8 @@ Wpa-sec Plugin
 [Pwnagotchi torch v2.9.5.8](https://github.com/jayofelony/pwnagotchi/releases/tag/v2.9.5.8)  
 qrencode must be installed
   ``` sudo apt install qrencode ```
+
+
 CONFIG:
 
 add to config.toml:
