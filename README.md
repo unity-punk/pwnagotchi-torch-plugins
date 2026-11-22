@@ -4,6 +4,19 @@ FULL DISCLOSURE I DO NOT HAVE A CLUE WHAT IM DOING.
 
 a place for my dumb plugins
 
+# Add my repo
+Custom plugin repository
+
+Edit your `/etc/pwnagotchi/config.toml` to look like this
+
+```TOML
+main.custom_plugin_repos = [
+    "https://github.com/unity-punk/pwnagotchi-torch-plugins/archive/master.zip",
+    ]
+```
+Then run this command: `sudo pwnagotchi plugins update`
+
+
 # wpa_sec_manager.py
 Cleans and creates a searchable web ui page from wpa-sec.cracked.potfile
 generates local QR codes in webui
@@ -17,6 +30,19 @@ wpa-sec Plugin installed and working
 qrencode must be installed and working
   ``` sudo apt install qrencode ```
 
+INSTALL:
+change to custom plugin directory
+``` 
+cd /etc/pwnagotchi/custom-plugins
+```
+download to current working directory:
+```
+wget https://github.com/unity-punk/pwnagotchi-torch-plugins/raw/refs/heads/main/wpa_sec_manager.py
+```
+restart pwnagotchi service
+```
+pwnkill
+```
 
 CONFIG:
 
