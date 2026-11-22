@@ -31,6 +31,12 @@ qrencode must be installed and working
   ``` sudo apt install qrencode ```
 
 INSTALL:
+install qrencode
+```
+sudo apt update
+sudo apt install qrencode
+```
+
 change to custom plugin directory
 ``` 
 cd /etc/pwnagotchi/custom-plugins
@@ -39,12 +45,9 @@ download to current working directory:
 ```
 wget https://github.com/unity-punk/pwnagotchi-torch-plugins/raw/refs/heads/main/wpa_sec_manager.py
 ```
-restart pwnagotchi service
-```
-pwnkill
-```
 
-CONFIG:
+
+CONFIGURE:
 
 add to config.toml:
 ```
@@ -55,4 +58,7 @@ main.plugins.wpa_sec_manager.potfile_path = "/etc/pwnagotchi/handshakes/wpa-sec.
 main.plugins.wpa_sec_manager.qr_dir = "/etc/pwnagotchi/handshakes/qrcodes"
 ```
 
-
+finally restart pwnagotchi service
+```
+pwnkill
+```
